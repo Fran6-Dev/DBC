@@ -1,0 +1,13 @@
+.faq-hero__content {
+  max-width: 680px;
+  margin-top: var(--space-lg);
+}
+
+.faq-hero__content h1 {
+  margin: var(--space-sm) 0 var(--space-md);
+}
+
+.faq-content {
+  max-width: 800px;
+  margin-inline: auto;
+}

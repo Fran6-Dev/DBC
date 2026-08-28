@@ -1,0 +1,107 @@
+.btn {
+  --btn-bg: var(--color-navy);
+  --btn-fg: var(--color-white);
+  --btn-border: transparent;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: var(--fs-small);
+  letter-spacing: 0.02em;
+  padding: 0.85rem 1.5rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--btn-border);
+  background: var(--btn-bg);
+  color: var(--btn-fg);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background var(--dur-fast) var(--ease-premium),
+    border-color var(--dur-fast) var(--ease-premium),
+    color var(--dur-fast) var(--ease-premium),
+    transform var(--dur-fast) var(--ease-premium),
+    box-shadow var(--dur-fast) var(--ease-premium);
+}
+
+.btn__icon {
+  transition: transform var(--dur-med) var(--ease-premium);
+}
+
+.btn:hover .btn__icon,
+.btn:focus-visible .btn__icon {
+  transform: translateX(3px);
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn--sm {
+  padding: 0.65rem 1.15rem;
+  font-size: 0.8rem;
+}
+
+.btn--lg {
+  padding: 1rem 1.85rem;
+  font-size: 0.95rem;
+}
+
+.btn--primary {
+  --btn-bg: var(--color-navy);
+  --btn-fg: var(--color-white);
+}
+
+.btn--primary:hover {
+  --btn-bg: var(--color-navy-deep);
+  box-shadow: var(--shadow-soft);
+}
+
+.btn--accent {
+  --btn-bg: var(--color-terracotta);
+  --btn-fg: var(--color-white);
+}
+
+.btn--accent:hover {
+  --btn-bg: var(--color-terracotta-deep);
+  box-shadow: var(--shadow-soft);
+}
+
+.btn--outline {
+  --btn-bg: transparent;
+  --btn-fg: var(--color-navy);
+  --btn-border: rgba(18, 59, 99, 0.3);
+}
+
+.btn--outline:hover {
+  --btn-border: var(--color-navy);
+  background: rgba(18, 59, 99, 0.04);
+}
+
+.btn--outline-light {
+  --btn-bg: transparent;
+  --btn-fg: var(--color-white);
+  --btn-border: rgba(255, 255, 255, 0.4);
+}
+
+.btn--outline-light:hover {
+  --btn-border: var(--color-white);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.btn--ghost {
+  --btn-bg: transparent;
+  --btn-fg: var(--color-navy);
+  padding-inline: 0.2rem;
+}
+
+.btn--ghost:hover {
+  --btn-fg: var(--color-terracotta);
+  transform: none;
+}
+
+.btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  transform: none;
+}

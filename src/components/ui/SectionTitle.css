@@ -1,0 +1,26 @@
+.section-title {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-xl);
+  max-width: 720px;
+}
+
+.section-title--center {
+  align-items: center;
+  text-align: center;
+  margin-inline: auto;
+}
+
+.section-title__heading {
+  margin: 0;
+}
+
+.section-title__lead {
+  margin: 0;
+  max-width: 620px;
+}
+
+.section--bg-dark .section-title__lead {
+  color: rgba(255, 255, 255, 0.72);
+}

@@ -1,0 +1,65 @@
+.legal-hero__content {
+  max-width: 680px;
+  margin-top: var(--space-lg);
+}
+
+.legal-hero__content h1 {
+  margin: var(--space-sm) 0 var(--space-sm);
+}
+
+.legal-updated {
+  font-size: var(--fs-small);
+  color: var(--color-slate);
+}
+
+.legal-content {
+  max-width: 760px;
+}
+
+.legal-content h2 {
+  font-size: 1.4rem;
+  margin-top: var(--space-xl);
+  margin-bottom: var(--space-sm);
+}
+
+.legal-content h2:first-child {
+  margin-top: 0;
+}
+
+.legal-content h3 {
+  font-size: 1.1rem;
+  margin-top: var(--space-md);
+  margin-bottom: 0.4rem;
+}
+
+.legal-content p {
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-sm);
+}
+
+.legal-content ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: var(--space-sm) 0 var(--space-md);
+  padding-left: 1.2rem;
+}
+
+.legal-content li {
+  list-style: disc;
+  color: var(--color-text-muted);
+}
+
+.legal-content strong {
+  color: var(--color-navy);
+}
+
+.legal-placeholder {
+  display: inline-block;
+  background: rgba(200, 107, 74, 0.12);
+  color: var(--color-terracotta-deep);
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.85em;
+  font-weight: 600;
+}

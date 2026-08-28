@@ -1,0 +1,27 @@
+.breadcrumb ol {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: var(--fs-small);
+  color: var(--color-text-muted);
+}
+
+.breadcrumb li {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.breadcrumb a {
+  color: var(--color-text-muted);
+}
+
+.breadcrumb [aria-current="page"] {
+  color: var(--color-navy);
+  font-weight: 600;
+}
+
+.breadcrumb__sep {
+  color: var(--color-border-soft);
+}

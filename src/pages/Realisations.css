@@ -1,0 +1,38 @@
+.realisations-hero__content {
+  max-width: 720px;
+  margin-top: var(--space-lg);
+}
+
+.realisations-hero__content h1 {
+  margin: var(--space-sm) 0 var(--space-md);
+}
+
+.realisations-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: var(--space-xl);
+}
+
+.realisations-filter {
+  padding: 0.55rem 1.1rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--color-border);
+  background: transparent;
+  font-size: var(--fs-small);
+  font-weight: 500;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  transition: all var(--dur-fast) var(--ease-premium);
+}
+
+.realisations-filter:hover {
+  border-color: var(--color-navy);
+  color: var(--color-navy);
+}
+
+.realisations-filter.is-active {
+  background: var(--color-navy);
+  border-color: var(--color-navy);
+  color: var(--color-white);
+}

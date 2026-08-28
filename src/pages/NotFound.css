@@ -1,0 +1,25 @@
+.not-found {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  padding-block: var(--space-3xl);
+  background: linear-gradient(180deg, var(--color-white), var(--color-beige));
+}
+
+.not-found__content {
+  max-width: 560px;
+  margin-inline: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.not-found__code {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 5rem;
+  color: var(--color-terracotta-soft);
+  line-height: 1;
+}

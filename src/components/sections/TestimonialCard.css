@@ -1,0 +1,60 @@
+.testimonial-card {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg) var(--space-md) var(--space-md);
+  border: 1px solid var(--color-border);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-card__mark {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  color: var(--color-terracotta-soft);
+  line-height: 1;
+  margin-bottom: -0.5rem;
+}
+
+.testimonial-card blockquote {
+  margin: 0;
+  flex: 1;
+}
+
+.testimonial-card blockquote p {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-style: italic;
+  color: var(--color-navy);
+  line-height: 1.55;
+}
+
+.testimonial-card figcaption {
+  margin-top: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.testimonial-card__author {
+  font-weight: 600;
+  color: var(--color-navy);
+  font-size: var(--fs-small);
+}
+
+.testimonial-card__role {
+  font-size: 0.8rem;
+}
+
+.testimonial-card__placeholder {
+  margin-top: 0.5rem;
+  display: inline-block;
+  width: fit-content;
+  font-size: 0.68rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-slate);
+  background: var(--color-beige);
+  padding: 0.25rem 0.55rem;
+  border-radius: var(--radius-pill);
+}
