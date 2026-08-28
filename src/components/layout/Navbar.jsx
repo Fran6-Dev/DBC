@@ -79,18 +79,20 @@ export default function Navbar() {
                     <Icon name="chevronDown" size={14} />
                   </button>
                   <div className={`navbar__dropdown-panel ${isServicesOpen ? "is-open" : ""}`}>
-                    <Link to="/services" className="navbar__dropdown-all link-underline">
-                      Toutes nos expertises
-                    </Link>
-                    <ul>
-                      {item.children.map((child) => (
-                        <li key={child.to}>
-                          <NavLink to={child.to} className="navbar__dropdown-link">
-                            {child.label}
-                          </NavLink>
-                        </li>
-                      ))}
-                    </ul>
+                    <div className="navbar__dropdown-panel-inner">
+                      <Link to="/services" className="navbar__dropdown-all link-underline">
+                        Toutes nos expertises
+                      </Link>
+                      <ul>
+                        {item.children.map((child) => (
+                          <li key={child.to}>
+                            <NavLink to={child.to} className="navbar__dropdown-link">
+                              {child.label}
+                            </NavLink>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                   </div>
                 </li>
               ) : (

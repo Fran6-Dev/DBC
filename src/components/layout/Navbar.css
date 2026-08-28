@@ -106,28 +106,40 @@
 }
 
 .navbar__dropdown-panel {
+  /* Le panneau démarre pile au bord bas du déclencheur (top: 100%, sans
+     interstice) afin qu'aucun pixel « mort » ne sépare le bouton du menu :
+     un espace non couvert par un descendant de .navbar__dropdown y ferait
+     croire au survol qu'il a quitté le composant et fermerait le menu. */
   position: absolute;
-  top: calc(100% + 14px);
+  top: 100%;
   left: 50%;
-  transform: translate(-50%, 8px);
+  transform: translateX(-50%);
   min-width: 300px;
-  background: var(--color-white);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow-lift);
-  padding: 1.1rem;
+  padding-top: 14px;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity var(--dur-fast) var(--ease-premium),
-    transform var(--dur-fast) var(--ease-premium);
+  transition: opacity var(--dur-fast) var(--ease-premium);
 }
 
 .navbar__dropdown-panel.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
-  transform: translate(-50%, 0);
+}
+
+.navbar__dropdown-panel-inner {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lift);
+  padding: 1.1rem;
+  transform: translateY(8px);
+  transition: transform var(--dur-fast) var(--ease-premium);
+}
+
+.navbar__dropdown-panel.is-open .navbar__dropdown-panel-inner {
+  transform: translateY(0);
 }
 
 .navbar__dropdown-all {
