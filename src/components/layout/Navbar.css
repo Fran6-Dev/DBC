@@ -29,26 +29,31 @@
 
 .navbar__logo {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  gap: 0.65rem;
   line-height: 1;
   flex-shrink: 0;
 }
 
-.navbar__logo-mark {
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 1.6rem;
-  color: var(--color-navy);
-  letter-spacing: 0.02em;
+.navbar__logo-img {
+  width: 44px;
+  height: auto;
+  flex-shrink: 0;
+  transition: width var(--dur-med) var(--ease-premium);
+}
+
+.navbar--scrolled .navbar__logo-img {
+  width: 36px;
 }
 
 .navbar__logo-sub {
-  font-size: 0.58rem;
-  letter-spacing: 0.14em;
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--color-slate);
-  margin-top: 2px;
-  white-space: nowrap;
+  color: var(--color-navy);
+  max-width: 110px;
+  line-height: 1.3;
 }
 
 .navbar__nav {

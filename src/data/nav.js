@@ -11,6 +11,8 @@ export const primaryNav = [
       { label: "Community management", to: "/services/community-management" },
       { label: "Charte graphique", to: "/services/charte-graphique" },
       { label: "Développement commercial", to: "/services/developpement-commercial" },
+      { label: "Gestion administrative", to: "/services/gestion-administrative" },
+      { label: "Recouvrement de créances", to: "/services/recouvrement-de-creances" },
     ],
   },
   { label: "À propos", to: "/a-propos" },
@@ -41,6 +43,8 @@ export const footerNavColumns = [
       { label: "Community management", to: "/services/community-management" },
       { label: "Charte graphique", to: "/services/charte-graphique" },
       { label: "Développement commercial", to: "/services/developpement-commercial" },
+      { label: "Gestion administrative", to: "/services/gestion-administrative" },
+      { label: "Recouvrement de créances", to: "/services/recouvrement-de-creances" },
     ],
   },
   {

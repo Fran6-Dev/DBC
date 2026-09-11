@@ -23,8 +23,8 @@ export default function Home() {
   return (
     <>
       <SEO
-        title="DBC — Business Booster 90, votre stratégie de développement à Montargis"
-        description="DBC accompagne les artisans, commerçants, TPE et PME de Montargis, du Loiret et d'Orléans avec Business Booster 90 : visibilité digitale, acquisition de clients et gestion administrative, en 90 jours."
+        title="DBC — Business Booster 90, votre stratégie de développement à Montargis et Orléans"
+        description="DBC accompagne les artisans, commerçants, TPE et PME de Montargis, Amilly, Châlette-sur-Loing, Orléans, Olivet et de tout le Loiret avec Business Booster 90 : visibilité digitale, acquisition de clients et gestion administrative, en 90 jours."
         path="/"
         jsonLd={buildLocalBusinessSchema()}
       />

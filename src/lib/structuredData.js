@@ -1,12 +1,23 @@
 import { siteConfig } from "../data/siteConfig";
 
+// Liste complète des communes ciblées pour le SEO local (areaServed) :
+// villes principales + communes des agglomérations montargoise et
+// orléanaise, en plus du département et de la région.
+const allServiceAreaTowns = siteConfig.serviceAreaGroups.flatMap((group) => group.towns);
+
+const areaServedSchema = [
+  ...allServiceAreaTowns.map((name) => ({ "@type": "City", name })),
+  { "@type": "AdministrativeArea", name: "Loiret" },
+  { "@type": "State", name: "Centre-Val de Loire" },
+];
+
 export function buildLocalBusinessSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     name: "DBC — Développement Business Consulting",
     description:
-      "Agence de consulting basée à Montargis, accompagnant les entreprises du Loiret, d'Orléans et de la région Centre-Val de Loire dans leur développement digital et commercial.",
+      "Agence de consulting basée à Montargis, accompagnant les entreprises de l'agglomération montargoise et de l'agglomération orléanaise, du Loiret et de la région Centre-Val de Loire dans leur développement digital et commercial.",
     url: siteConfig.siteUrl,
     email: siteConfig.email,
     telephone: siteConfig.phoneDisplay,
@@ -17,7 +28,7 @@ export function buildLocalBusinessSchema() {
       addressRegion: "Centre-Val de Loire",
       addressCountry: "FR",
     },
-    areaServed: siteConfig.serviceArea,
+    areaServed: areaServedSchema,
     sameAs: siteConfig.socials.map((s) => s.url),
   };
 }
@@ -65,7 +76,7 @@ export function buildServiceSchema(service) {
       name: "DBC — Développement Business Consulting",
       url: siteConfig.siteUrl,
     },
-    areaServed: siteConfig.serviceArea,
+    areaServed: areaServedSchema,
     url: `${siteConfig.siteUrl}/services/${service.slug}`,
   };
 }

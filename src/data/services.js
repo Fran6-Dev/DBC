@@ -1,4 +1,4 @@
-// Données des 6 expertises DBC.
+// Données des 8 expertises DBC.
 // Structure pensée pour être facilement modifiable (contenu type CMS).
 export const services = [
   {
@@ -352,6 +352,124 @@ export const services = [
       {
         q: "Est-il possible de construire une offre sur mesure ?",
         a: "Tout à fait, chaque accompagnement est construit en fonction de votre activité, de vos objectifs et de vos moyens disponibles.",
+      },
+    ],
+  },
+  {
+    slug: "gestion-administrative",
+    icon: "folder",
+    title: "Gestion administrative",
+    shortTitle: "Gestion administrative",
+    cardDescription:
+      "Confiez votre organisation et votre suivi documentaire pour vous concentrer sur votre métier.",
+    metaTitle: "Gestion administrative pour artisans, commerçants et TPE à Montargis | DBC",
+    metaDescription:
+      "DBC accompagne les artisans, commerçants, TPE et PME de Montargis, du Loiret et d'Orléans dans l'organisation de leur suivi administratif et documentaire.",
+    heroKicker: "Gestion administrative",
+    heroTitle: "Libérez du temps sur ce qui ne crée pas de valeur.",
+    heroLead:
+      "L'administratif s'accumule vite quand on est concentré sur son activité. Nous structurons votre organisation et votre suivi documentaire pour vous faire gagner du temps, sans rien laisser de côté.",
+    presentation:
+      "La gestion administrative regroupe l'organisation et le suivi de vos documents et démarches courantes : classement, échéances, dossiers. C'est un travail discret mais indispensable, qui pèse lourd dans l'emploi du temps des artisans, commerçants, TPE et PME lorsqu'il n'est pas structuré.",
+    problematique:
+      "Passionnés par leur métier, de nombreux dirigeants manquent de temps pour tenir à jour leurs dossiers et leur classement. Résultat : des documents éparpillés, des échéances oubliées et une charge mentale qui s'accumule en parallèle de l'activité.",
+    approche: [
+      "Un état des lieux de votre organisation actuelle, physique et numérique.",
+      "La mise en place d'un système de classement simple et durable.",
+      "Un suivi régulier de vos documents et de vos échéances administratives.",
+      "Un accompagnement adapté à votre rythme, sans bouleverser vos habitudes de travail.",
+    ],
+    comprend: [
+      "Organisation et suivi administratif courant",
+      "Classement et gestion documentaire (physique et numérique)",
+      "Mise en place d'un système de suivi clair des échéances",
+      "Structuration des dossiers par activité ou par client",
+      "Accompagnement dans la mise à jour régulière des documents",
+      "Recommandations pour simplifier votre organisation au quotidien",
+    ],
+    benefices: [
+      "Un gain de temps concret sur des tâches chronophages et répétitives.",
+      "Une organisation claire, facile à retrouver et à faire évoluer.",
+      "Moins de charge mentale liée aux documents et aux échéances.",
+      "Plus de disponibilité pour vous concentrer sur votre cœur de métier.",
+    ],
+    processus: [
+      { step: "01", title: "État des lieux", desc: "Analyse de votre organisation administrative actuelle." },
+      { step: "02", title: "Structuration", desc: "Mise en place d'un système de classement et de suivi adapté." },
+      { step: "03", title: "Mise en œuvre", desc: "Organisation et traitement de vos documents courants." },
+      { step: "04", title: "Suivi", desc: "Maintien de l'organisation dans la durée, ajustements si besoin." },
+    ],
+    faqs: [
+      {
+        q: "Intervenez-vous sur l'administratif physique et numérique ?",
+        a: "Oui, nous adaptons l'accompagnement à votre fonctionnement : classement papier, outils numériques, ou une combinaison des deux.",
+      },
+      {
+        q: "Cet accompagnement remplace-t-il mon comptable ?",
+        a: "Non, nous intervenons sur l'organisation et le suivi administratif courant, en complément de votre comptable ou expert-comptable, pas à sa place.",
+      },
+      {
+        q: "Puis-je solliciter cet accompagnement ponctuellement ?",
+        a: "Oui, selon vos besoins, l'accompagnement peut être ponctuel (remise à plat de l'existant) ou régulier (suivi dans la durée).",
+      },
+    ],
+  },
+  {
+    slug: "recouvrement-de-creances",
+    icon: "euro",
+    title: "Recouvrement de créances",
+    shortTitle: "Recouvrement de créances",
+    cardDescription:
+      "Sécurisez votre trésorerie grâce à un suivi rigoureux de vos créances et des relances amiables.",
+    metaTitle: "Recouvrement de créances et relances amiables à Montargis | DBC",
+    metaDescription:
+      "DBC accompagne les artisans, commerçants, TPE et PME de Montargis, du Loiret et d'Orléans dans le suivi de leurs créances et les relances amiables, pour sécuriser leur trésorerie.",
+    heroKicker: "Recouvrement de créances",
+    heroTitle: "Des factures suivies, une trésorerie préservée.",
+    heroLead:
+      "Les impayés fragilisent votre trésorerie et prennent du temps à gérer seul. Nous structurons vos relances amiables et le suivi de vos créances, tout en préservant votre relation client.",
+    presentation:
+      "Le recouvrement de créances consiste à suivre et relancer les factures impayées de façon organisée et amiable, pour sécuriser votre trésorerie sans dégrader la relation avec vos clients. C'est une démarche progressive, qui privilégie le dialogue avant toute autre solution.",
+    problematique:
+      "Entre la gestion de l'activité et les relances à faire, de nombreux dirigeants laissent les impayés s'accumuler faute de temps ou de méthode. Cette situation fragilise la trésorerie et peut, à terme, mettre en difficulté toute l'entreprise.",
+    approche: [
+      "Un état des lieux de vos créances en cours et de leur ancienneté.",
+      "La mise en place d'un processus de relance amiable structuré et progressif.",
+      "Un suivi régulier jusqu'au règlement, dans le respect de la relation client.",
+      "Des recommandations pour limiter les retards de paiement à l'avenir.",
+    ],
+    comprend: [
+      "Relances amiables adaptées à chaque situation",
+      "Suivi rigoureux des créances en cours",
+      "Préservation de la relation client tout au long du processus",
+      "Accompagnement pour l'amélioration de votre trésorerie",
+      "Tableaux de suivi clairs et actualisés",
+      "Conseils pour prévenir les futurs retards de paiement",
+    ],
+    benefices: [
+      "Une trésorerie plus sereine grâce à un suivi régulier des encaissements.",
+      "Des relances amiables, respectueuses de votre relation client.",
+      "Un gain de temps sur une tâche souvent repoussée faute de disponibilité.",
+      "Une vision claire de vos créances en cours à tout moment.",
+    ],
+    processus: [
+      { step: "01", title: "État des lieux", desc: "Recensement de vos créances en cours et de leur ancienneté." },
+      { step: "02", title: "Processus de relance", desc: "Mise en place d'un parcours de relance amiable progressif." },
+      { step: "03", title: "Suivi", desc: "Relances et suivi régulier jusqu'au règlement des factures." },
+      { step: "04", title: "Prévention", desc: "Recommandations pour limiter les futurs retards de paiement." },
+    ],
+    faqs: [
+      {
+        q: "Intervenez-vous en cas de litige juridique ?",
+        a: "Non, notre accompagnement porte sur les relances amiables et le suivi de vos créances. En cas de contentieux nécessitant une procédure juridique, nous pouvons vous orienter vers les professionnels compétents.",
+      },
+      {
+        q: "Les relances amiables risquent-elles d'abîmer ma relation client ?",
+        a: "Non, c'est justement l'objectif inverse : nous adaptons le ton et le rythme des relances pour recouvrer les sommes dues tout en préservant la relation avec vos clients.",
+      },
+      {
+        q: "À partir de quel montant d'impayé intervenez-vous ?",
+        a: "Il n'y a pas de seuil minimum : nous adaptons l'accompagnement au volume et à la nature de vos créances, qu'il s'agisse d'un suivi ponctuel ou régulier.",
       },
     ],
   },

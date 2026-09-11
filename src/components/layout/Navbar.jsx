@@ -53,7 +53,7 @@ export default function Navbar() {
     <header className={`navbar ${isScrolled ? "navbar--scrolled" : ""}`}>
       <div className="container navbar__inner">
         <Link to="/" className="navbar__logo" aria-label="DBC — Développement Business Consulting, retour à l'accueil">
-          <span className="navbar__logo-mark">DBC</span>
+          <img src="/logo-mark.png" alt="" className="navbar__logo-img" width="56" height="47" />
           <span className="navbar__logo-sub">Développement Business Consulting</span>
         </Link>
 

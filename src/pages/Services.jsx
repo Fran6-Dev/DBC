@@ -12,8 +12,8 @@ export default function Services() {
   return (
     <>
       <SEO
-        title="Nos expertises — SEO, site web, Google Business, réseaux sociaux, identité, commercial"
-        description="Découvrez les 6 expertises DBC : référencement naturel, création de site web, Google Business Profile, community management, charte graphique et développement commercial."
+        title="Nos expertises — SEO, site web, Google Business, développement commercial, administratif"
+        description="Découvrez les 8 expertises DBC : référencement naturel, création de site web, Google Business Profile, community management, charte graphique, développement commercial, gestion administrative et recouvrement de créances."
         path="/services"
         jsonLd={buildBreadcrumbSchema([
           { label: "Accueil", to: "/" },

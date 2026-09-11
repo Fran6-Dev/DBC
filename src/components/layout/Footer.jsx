@@ -13,8 +13,9 @@ export default function Footer() {
     <footer className="footer">
       <div className="container footer__top">
         <div className="footer__brand">
-          <Link to="/" className="footer__logo">
-            DBC
+          <Link to="/" className="footer__logo" aria-label="DBC — Développement Business Consulting">
+            <img src="/logo-mark-white.png" alt="" className="footer__logo-img" width="52" height="43" />
+            <span className="footer__logo-sub">Développement Business Consulting</span>
           </Link>
           <p className="footer__tagline">« {siteConfig.tagline} »</p>
           <p className="footer__address text-muted">
@@ -82,7 +83,7 @@ export default function Footer() {
             © {year} DBC — Développement Business Consulting. Tous droits réservés.
           </p>
           <p className="footer__area text-muted">
-            Intervention à {siteConfig.serviceArea.join(" · ")}
+            Intervention à {siteConfig.serviceAreaShort}
           </p>
         </div>
       </div>

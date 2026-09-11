@@ -104,7 +104,7 @@ export default function Contact() {
     <>
       <SEO
         title="Contact — Réservez votre audit gratuit Business Booster 90"
-        description="Réservez votre audit gratuit et sans engagement avec DBC, agence de consulting basée à Montargis, pour échanger sur votre développement digital et commercial dans le Loiret, à Orléans et en Centre-Val de Loire."
+        description="Réservez votre audit gratuit et sans engagement avec DBC, agence de consulting basée à Montargis, pour échanger sur votre développement digital et commercial à Montargis, dans son agglomération, à Orléans et dans le Loiret."
         path="/contact"
         jsonLd={buildBreadcrumbSchema([{ label: "Accueil", to: "/" }, { label: "Contact" }])}
       />
@@ -158,7 +158,7 @@ export default function Contact() {
                 <Icon name="location" size={20} />
                 <div>
                   <span className="contact-info__label">Zone d'intervention</span>
-                  <span>{siteConfig.serviceArea.join(" · ")}</span>
+                  <span>{siteConfig.serviceAreaShort}</span>
                 </div>
               </li>
             </ul>
