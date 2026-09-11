@@ -4,7 +4,9 @@ import Breadcrumb from "../components/ui/Breadcrumb";
 import ValueCard from "../components/sections/ValueCard";
 import CTASection from "../components/sections/CTASection";
 import Icon from "../components/ui/Icon";
-import { values } from "../data/values";
+import ReassuranceBadges from "../components/ui/ReassuranceBadges";
+import { values, reassuranceBadges } from "../data/values";
+import { siteConfig } from "../data/siteConfig";
 import { buildBreadcrumbSchema } from "../lib/structuredData";
 import "./About.css";
 
@@ -37,24 +39,21 @@ export default function About() {
       <section className="section section--bg-alt about-story">
         <div className="container about-story__grid">
           <Reveal>
-            <div className="about-story__photo" role="img" aria-label="Espace réservé à une photo du fondateur ou de l'équipe DBC">
-              <span>Photo de l'équipe</span>
+            <div className="about-story__photo" role="img" aria-label={`Espace réservé à une photo de ${siteConfig.founder.name}`}>
+              <span>Photo de {siteConfig.founder.name}</span>
               <span className="text-muted">à venir</span>
             </div>
           </Reveal>
           <Reveal delay={1}>
-            <span className="eyebrow">Notre vision</span>
-            <h2>Une agence à taille humaine, un niveau d'exigence premium.</h2>
-            <p className="text-lead">
-              Basée à Montargis, DBC accompagne les entreprises, indépendants et entrepreneurs du
-              Loiret, d'Orléans et de la région Centre-Val de Loire dans leur développement digital
-              et commercial.
-            </p>
-            <p className="text-muted">
-              Nous croyons en une approche proche de nos clients, où chaque stratégie est construite
-              sur mesure plutôt que dupliquée d'un client à l'autre. Notre rôle : comprendre
-              réellement votre activité, avant de proposer la moindre solution.
-            </p>
+            <span className="eyebrow">Qui suis-je ?</span>
+            <h2>
+              {siteConfig.founder.name}, {siteConfig.founder.role.toLowerCase()}
+            </h2>
+            {siteConfig.founder.bio.map((paragraph, index) => (
+              <p key={paragraph.slice(0, 24)} className={index === 0 ? "text-lead" : "text-muted"}>
+                {paragraph}
+              </p>
+            ))}
           </Reveal>
         </div>
       </section>
@@ -73,6 +72,9 @@ export default function About() {
               </li>
             ))}
           </ul>
+          <Reveal delay={1} className="about-pillars-badges">
+            <ReassuranceBadges items={reassuranceBadges} />
+          </Reveal>
         </div>
       </section>
 
@@ -94,7 +96,7 @@ export default function About() {
         eyebrow="Faisons connaissance"
         title="Discutons de votre activité et de vos objectifs."
         text="Le premier échange est gratuit et sans engagement : l'occasion idéale de voir si DBC est le bon partenaire pour vous."
-        primaryLabel="Parlons de votre projet"
+        primaryLabel="Je réserve mon audit gratuit"
         primaryTo="/contact"
         secondaryLabel="Voir nos réalisations"
         secondaryTo="/realisations"

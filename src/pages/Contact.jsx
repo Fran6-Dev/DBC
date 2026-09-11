@@ -5,6 +5,7 @@ import Reveal from "../components/ui/Reveal";
 import Breadcrumb from "../components/ui/Breadcrumb";
 import Icon from "../components/ui/Icon";
 import { siteConfig } from "../data/siteConfig";
+import { auditChecklist } from "../data/businessBooster";
 import { sendContactRequest } from "../lib/contactService";
 import { buildBreadcrumbSchema } from "../lib/structuredData";
 import "./Contact.css";
@@ -102,8 +103,8 @@ export default function Contact() {
   return (
     <>
       <SEO
-        title="Contact — Demander un devis ou échanger sur votre projet"
-        description="Contactez DBC pour échanger sur votre projet de développement digital ou commercial. Agence basée à Montargis, intervention dans le Loiret, à Orléans et en Centre-Val de Loire."
+        title="Contact — Réservez votre audit gratuit Business Booster 90"
+        description="Réservez votre audit gratuit et sans engagement avec DBC, agence de consulting basée à Montargis, pour échanger sur votre développement digital et commercial dans le Loiret, à Orléans et en Centre-Val de Loire."
         path="/contact"
         jsonLd={buildBreadcrumbSchema([{ label: "Accueil", to: "/" }, { label: "Contact" }])}
       />
@@ -113,9 +114,10 @@ export default function Contact() {
           <Breadcrumb items={[{ label: "Accueil", to: "/" }, { label: "Contact" }]} />
           <Reveal delay={1} className="contact-hero__content">
             <span className="eyebrow">Contact</span>
-            <h1>Parlons de votre projet.</h1>
+            <h1>Réservez votre audit gratuit.</h1>
             <p className="text-lead">
-              Une question, un projet ou simplement besoin d'y voir plus clair ? Échangeons.
+              En 30 minutes, on analyse ensemble votre visibilité actuelle et on identifie les
+              leviers prioritaires pour votre activité — sans engagement.
             </p>
           </Reveal>
         </div>
@@ -125,6 +127,14 @@ export default function Contact() {
         <div className="container contact-grid">
           <Reveal className="contact-info">
             <h2>Nos coordonnées</h2>
+            <ul className="contact-info__checklist">
+              {auditChecklist.map((item) => (
+                <li key={item}>
+                  <Icon name="check" size={16} />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
             <ul className="contact-info__list">
               <li>
                 <Icon name="mail" size={20} />
@@ -292,9 +302,11 @@ export default function Contact() {
               </div>
 
               <button type="submit" className="btn btn--accent btn--lg contact-form__submit" disabled={status === "loading"}>
-                <span>{status === "loading" ? "Envoi en cours..." : "Envoyer ma demande"}</span>
+                <span>{status === "loading" ? "Envoi en cours..." : "Je réserve mon audit gratuit"}</span>
                 {status !== "loading" && <Icon name="arrowRight" size={16} />}
               </button>
+
+              <p className="contact-form__note text-muted">Réponse sous 48h ouvrées.</p>
 
               <div aria-live="polite">
                 {status === "success" && (

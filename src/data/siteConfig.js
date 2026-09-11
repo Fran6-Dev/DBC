@@ -1,13 +1,24 @@
 // Informations générales de l'agence.
-// À remplacer par les informations officielles avant mise en production.
+// Email et téléphone : coordonnées réelles communiquées par la cliente.
+// Les informations légales (legal.*) restent des placeholders à compléter avant mise en production.
 export const siteConfig = {
   name: "DBC",
   legalTradeName: "Développement Business Consulting",
   tagline: "Votre partenaire de confiance pour développer votre activité",
+  audience: "artisans, commerçants, TPE et PME",
   siteUrl: "https://www.dbc-conseil.fr", // Placeholder — à remplacer par le nom de domaine définitif
-  email: "contact@dbc-conseil.fr", // Placeholder
-  phoneDisplay: "02 38 00 00 00", // Placeholder
-  phoneHref: "+33238000000", // Placeholder
+  email: "contact.dbc.pro@gmail.com",
+  phoneDisplay: "07 66 98 20 40",
+  phoneHref: "+33766982040",
+  founder: {
+    name: "Djamila Bekkouche",
+    role: "Fondatrice de DBC",
+    bio: [
+      "Au cours de mon parcours professionnel, j'ai évolué dans des secteurs variés, à des postes à responsabilités. Ces expériences m'ont permis de développer une vision globale de l'entreprise — administrative, organisationnelle, commerciale et relationnelle.",
+      "En observant le quotidien des dirigeants de TPE, PME, artisans et commerçants, un constat s'est imposé : passionnés par leur métier, ils manquent souvent de temps pour développer leur activité. C'est de ce constat qu'est née DBC.",
+      "Parce que chaque entreprise est unique, je privilégie une approche sur-mesure, pragmatique et opérationnelle. Je ne me contente pas de conseiller : je m'implique à vos côtés pour transformer les idées en actions.",
+    ],
+  },
   address: {
     city: "Montargis",
     postalCode: "45200", // Placeholder

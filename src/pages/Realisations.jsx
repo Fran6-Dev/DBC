@@ -67,7 +67,7 @@ export default function Realisations() {
         eyebrow="Votre projet, bientôt ici"
         title="Envie de faire partie de nos prochaines réalisations ?"
         text="Parlons de votre activité et de vos objectifs pour construire ensemble un accompagnement sur mesure."
-        primaryLabel="Parlons de votre projet"
+        primaryLabel="Je réserve mon audit gratuit"
         primaryTo="/contact"
       />
     </>

@@ -50,7 +50,7 @@ export default function ServiceDetail() {
             <p className="text-lead">{service.heroLead}</p>
             <div className="service-detail-hero__actions">
               <a href="#contact-cta-service" className="btn btn--accent">
-                <span>Parlons de votre projet</span>
+                <span>Je réserve mon audit gratuit</span>
                 <Icon name="arrowRight" size={16} />
               </a>
             </div>
@@ -186,7 +186,7 @@ export default function ServiceDetail() {
           eyebrow="Prêt à en discuter ?"
           title={`Échangeons sur votre besoin en ${service.shortTitle.toLowerCase()}.`}
           text="Le premier échange est gratuit et sans engagement. Nous prenons le temps de comprendre votre activité avant de vous proposer un accompagnement sur mesure."
-          primaryLabel="Parlons de votre projet"
+          primaryLabel="Je réserve mon audit gratuit"
           primaryTo="/contact"
           secondaryLabel="Voir tous nos services"
           secondaryTo="/services"

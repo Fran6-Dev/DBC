@@ -46,7 +46,7 @@ export default function FAQ() {
         eyebrow="Une autre question ?"
         title="Échangeons directement sur votre projet."
         text="Le premier échange est gratuit et sans engagement."
-        primaryLabel="Prendre contact"
+        primaryLabel="Je réserve mon audit gratuit"
         primaryTo="/contact"
       />
     </>

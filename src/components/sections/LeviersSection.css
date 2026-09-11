@@ -1,0 +1,41 @@
+.leviers-grid {
+  gap: var(--space-md) var(--space-lg);
+}
+
+.leviers-card {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+}
+
+.leviers-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: var(--space-md);
+  padding-bottom: var(--space-sm);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.leviers-card ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.leviers-card li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+}
+
+.leviers-card li svg {
+  color: var(--color-terracotta);
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+.section--bg-alt .leviers-card {
+  background: var(--color-white);
+}

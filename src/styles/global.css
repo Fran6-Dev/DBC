@@ -281,3 +281,74 @@ select:focus-visible,
   background: var(--color-terracotta);
   color: var(--color-white);
 }
+
+/* ---------------------------------------------------------------------- */
+/* Hero — base réutilisée par plusieurs pages (Accueil, Business Booster 90) */
+/* ---------------------------------------------------------------------- */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding-block: clamp(4rem, 10vw, 8rem) clamp(3rem, 8vw, 6rem);
+  background: linear-gradient(180deg, var(--color-white) 0%, var(--color-white) 70%, var(--color-beige) 100%);
+}
+
+.hero__inner {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-md);
+  position: relative;
+  z-index: 1;
+}
+
+.hero__eyebrow {
+  margin-bottom: 0.2rem;
+}
+
+.hero__title {
+  margin: 0;
+}
+
+.hero__lead {
+  max-width: 560px;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: var(--space-sm);
+}
+
+.hero__ring {
+  z-index: 0;
+}
+
+.hero__ring--1 {
+  width: 640px;
+  height: 640px;
+  top: -280px;
+  right: -220px;
+}
+
+.hero__ring--2 {
+  width: 340px;
+  height: 340px;
+  bottom: -180px;
+  right: 6%;
+}
+
+@media (max-width: 640px) {
+  .hero__ring--1 {
+    width: 380px;
+    height: 380px;
+    top: -180px;
+    right: -160px;
+  }
+
+  .hero__ring--2 {
+    display: none;
+  }
+}

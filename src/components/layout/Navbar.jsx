@@ -113,7 +113,7 @@ export default function Navbar() {
 
         <div className="navbar__actions">
           <Link to="/contact" className="btn btn--accent btn--sm navbar__cta">
-            <span>Parlons de votre projet</span>
+            <span>Je réserve mon audit gratuit</span>
             <Icon name="arrowRight" size={16} />
           </Link>
           <button
@@ -156,7 +156,7 @@ export default function Navbar() {
               ))}
             </ul>
             <Link to="/contact" className="btn btn--accent navbar__mobile-cta">
-              <span>Parlons de votre projet</span>
+              <span>Je réserve mon audit gratuit</span>
               <Icon name="arrowRight" size={16} />
             </Link>
           </nav>

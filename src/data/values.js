@@ -1,45 +1,23 @@
+// Raisons de faire confiance à DBC — contenu réel fourni par la cliente
+// (remplace un précédent contenu provisoire).
 export const values = [
   {
-    title: "Accompagnement",
-    description:
-      "Nous ne livrons pas seulement une prestation : nous restons présents pour vous conseiller à chaque étape de votre développement.",
+    title: "Un accompagnement personnalisé",
+    description: "Chaque entreprise est unique : mes solutions le sont aussi.",
   },
   {
-    title: "Développement",
-    description:
-      "Chaque action est pensée pour générer des résultats concrets et durables sur votre visibilité et votre activité.",
+    title: "Une interlocutrice unique",
+    description: "Un suivi simple, direct et réactif, du premier échange au résultat.",
   },
   {
-    title: "Confiance",
-    description:
-      "Une relation transparente, basée sur l'écoute et la clarté, pour construire un partenariat qui dure dans le temps.",
+    title: "Une vision globale",
+    description: "Commerce, administratif et gestion : des leviers complémentaires activés ensemble.",
   },
   {
-    title: "Engagement",
-    description:
-      "Nous nous investissons dans votre réussite comme si votre activité était la nôtre, avec exigence et rigueur.",
+    title: "Des solutions concrètes",
+    description: "Des actions opérationnelles, adaptées à vos objectifs — pas de théorie.",
   },
 ];
 
-export const processSteps = [
-  {
-    step: "01",
-    title: "Échange",
-    description: "Comprendre votre activité, vos objectifs et vos enjeux.",
-  },
-  {
-    step: "02",
-    title: "Analyse",
-    description: "Identifier les opportunités et les leviers de croissance.",
-  },
-  {
-    step: "03",
-    title: "Stratégie",
-    description: "Construire un plan d'action adapté à votre entreprise.",
-  },
-  {
-    step: "04",
-    title: "Accompagnement",
-    description: "Mettre en œuvre, mesurer et faire évoluer les actions.",
-  },
-];
+// Mots-clés de marque affichés en bandeau (ex. page À propos).
+export const reassuranceBadges = ["Réactivité", "Rigueur", "Confiance", "Engagement"];

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import SEO from "../components/seo/SEO";
 import Reveal from "../components/ui/Reveal";
 import Button from "../components/ui/Button";
@@ -10,9 +11,11 @@ import TestimonialCard from "../components/sections/TestimonialCard";
 import CTASection from "../components/sections/CTASection";
 import LocalAreaSection from "../components/sections/LocalAreaSection";
 import { services } from "../data/services";
-import { values, processSteps } from "../data/values";
+import { values } from "../data/values";
+import { piliers } from "../data/businessBooster";
 import { projects } from "../data/projects";
 import { testimonials } from "../data/testimonials";
+import { siteConfig } from "../data/siteConfig";
 import { buildLocalBusinessSchema } from "../lib/structuredData";
 import "./Home.css";
 
@@ -20,8 +23,8 @@ export default function Home() {
   return (
     <>
       <SEO
-        title="Agence de consulting à Montargis — SEO, site web, développement commercial"
-        description="DBC est une agence de consulting basée à Montargis qui accompagne les entreprises du Loiret, d'Orléans et de la région Centre-Val de Loire : SEO, création de site web, Google Business, community management, identité visuelle et développement commercial."
+        title="DBC — Business Booster 90, votre stratégie de développement à Montargis"
+        description="DBC accompagne les artisans, commerçants, TPE et PME de Montargis, du Loiret et d'Orléans avec Business Booster 90 : visibilité digitale, acquisition de clients et gestion administrative, en 90 jours."
         path="/"
         jsonLd={buildLocalBusinessSchema()}
       />
@@ -32,38 +35,56 @@ export default function Home() {
         <span className="ring-decoration ring-decoration--terracotta hero__ring hero__ring--2" aria-hidden="true" />
         <div className="container hero__inner">
           <Reveal>
-            <span className="eyebrow hero__eyebrow">Développement Business Consulting</span>
+            <span className="eyebrow hero__eyebrow">Business Booster 90</span>
           </Reveal>
           <Reveal delay={1}>
             <h1 className="hero__title">
-              Votre <span className="accent">partenaire de confiance</span> pour développer
-              votre activité.
+              Développez votre activité,{" "}
+              <span className="accent">sans y consacrer vos journées</span>.
             </h1>
           </Reveal>
           <Reveal delay={2}>
             <p className="hero__lead text-lead">
-              Nous accompagnons les entreprises, indépendants et entrepreneurs dans leur
-              développement digital et commercial.
+              DBC accompagne les {siteConfig.audience} de Montargis et du Loiret avec Business
+              Booster 90, un programme sur 90 jours pour gagner en visibilité, trouver de
+              nouveaux clients et alléger votre gestion administrative.
             </p>
           </Reveal>
           <Reveal delay={3} className="hero__actions">
-            <Button to="/contact" variant="accent" size="lg">
-              Parlons de votre projet
+            <Button to="/business-booster-90#audit-gratuit" variant="accent" size="lg">
+              Je réserve mon audit gratuit
             </Button>
-            <Button to="/services" variant="outline" size="lg" icon={false}>
-              Découvrir nos expertises
+            <Button to="/business-booster-90" variant="outline" size="lg" icon={false}>
+              Découvrir Business Booster 90
             </Button>
           </Reveal>
         </div>
       </section>
 
+      {/* PROGRAMME — 3 PILIERS */}
+      <section className="section" id="programme-apercu">
+        <div className="container">
+          <SectionTitle
+            eyebrow="Le programme"
+            title="Business Booster 90 : trois piliers, un seul objectif."
+            lead="Un accompagnement structuré sur 90 jours, adapté à votre activité — pas une prestation standardisée."
+          />
+          <ProcessTimeline steps={piliers} />
+          <Reveal delay={2} className="home__realisations-cta">
+            <Link to="/business-booster-90" className="btn btn--ghost">
+              Découvrir le programme en détail →
+            </Link>
+          </Reveal>
+        </div>
+      </section>
+
       {/* SERVICES */}
-      <section className="section" id="services-apercu">
+      <section className="section section--bg-alt" id="services-apercu">
         <div className="container">
           <SectionTitle
             eyebrow="Nos expertises"
-            title="Des expertises pensées pour faire grandir votre activité."
-            lead="DBC accompagne ses clients de leur visibilité en ligne jusqu'à leur développement commercial, avec une approche claire et sur mesure."
+            title="Les leviers activés selon vos besoins."
+            lead="Visibilité digitale, acquisition, gestion administrative : chaque levier de Business Booster 90 s'appuie sur une expertise dédiée."
           />
           <div className="grid grid-3">
             {services.map((service, index) => (
@@ -74,7 +95,7 @@ export default function Home() {
       </section>
 
       {/* POURQUOI DBC */}
-      <section className="section section--bg-alt">
+      <section className="section">
         <div className="container">
           <SectionTitle
             eyebrow="Pourquoi DBC"
@@ -86,18 +107,6 @@ export default function Home() {
               <ValueCard key={value.title} value={value} index={index + 1} delay={Math.min(index + 1, 5)} />
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* MÉTHODE */}
-      <section className="section">
-        <div className="container">
-          <SectionTitle
-            eyebrow="Notre méthode"
-            title="Une méthode simple, pensée pour des résultats concrets."
-            lead="Chaque accompagnement suit un processus clair, pour avancer avec vous en toute transparence."
-          />
-          <ProcessTimeline steps={processSteps} />
         </div>
       </section>
 

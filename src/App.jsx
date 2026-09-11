@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import Layout from "./components/layout/Layout";
 import Home from "./pages/Home";
+import BusinessBooster90 from "./pages/BusinessBooster90";
 import Services from "./pages/Services";
 import ServiceDetail from "./pages/ServiceDetail";
 import About from "./pages/About";
@@ -17,6 +18,7 @@ export default function App() {
     <Routes>
       <Route element={<Layout />}>
         <Route path="/" element={<Home />} />
+        <Route path="/business-booster-90" element={<BusinessBooster90 />} />
         <Route path="/services" element={<Services />} />
         <Route path="/services/:slug" element={<ServiceDetail />} />
         <Route path="/a-propos" element={<About />} />

@@ -1,0 +1,25 @@
+.reassurance-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 2rem;
+}
+
+.reassurance-badges li {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-navy);
+  position: relative;
+  padding-left: 1.1rem;
+}
+
+.reassurance-badges li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-terracotta);
+}

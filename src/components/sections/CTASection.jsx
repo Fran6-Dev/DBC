@@ -6,7 +6,7 @@ export default function CTASection({
   eyebrow = "Prendre contact",
   title = "Prêt à faire passer votre activité au niveau supérieur ?",
   text = "Parlons de vos objectifs et identifions ensemble les leviers qui peuvent faire la différence.",
-  primaryLabel = "Parlons de votre projet",
+  primaryLabel = "Je réserve mon audit gratuit",
   primaryTo = "/contact",
   secondaryLabel,
   secondaryTo,

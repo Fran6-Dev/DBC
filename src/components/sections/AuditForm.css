@@ -1,0 +1,108 @@
+.audit-form-card {
+  background: var(--color-navy);
+  border-radius: var(--radius-lg);
+  padding: clamp(1.75rem, 4vw, 2.75rem);
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.audit-form-card__checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-bottom: var(--space-lg);
+}
+
+.audit-form-card__checklist li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.92rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.audit-form-card__checklist svg {
+  color: var(--color-terracotta-soft);
+  flex-shrink: 0;
+}
+
+.audit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.audit-form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.audit-form__field input {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: var(--radius-md);
+  padding: 0.85rem 1rem;
+  color: var(--color-white);
+  font-family: inherit;
+  font-size: 0.95rem;
+  transition: border-color var(--dur-fast) var(--ease-premium), background var(--dur-fast) var(--ease-premium);
+}
+
+.audit-form__field input::placeholder {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.audit-form__field input:focus {
+  outline: none;
+  border-color: var(--color-terracotta);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.audit-form__field input[aria-invalid="true"] {
+  border-color: var(--color-terracotta-soft);
+}
+
+.audit-form__error {
+  margin: 0;
+  font-size: 0.78rem;
+  color: var(--color-terracotta-soft);
+}
+
+.audit-form__honeypot {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.audit-form__submit {
+  margin-top: 0.4rem;
+  width: 100%;
+  justify-content: center;
+}
+
+.audit-form__note {
+  margin: 0;
+  text-align: center;
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.audit-form__status {
+  margin: 0;
+  padding: 0.75rem 0.9rem;
+  border-radius: var(--radius-md);
+  font-size: 0.85rem;
+}
+
+.audit-form__status--success {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--color-white);
+}
+
+.audit-form__status--error {
+  background: rgba(200, 107, 74, 0.2);
+  color: var(--color-terracotta-soft);
+}

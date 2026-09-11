@@ -1,5 +1,6 @@
 export const primaryNav = [
   { label: "Accueil", to: "/" },
+  { label: "Méthode", to: "/business-booster-90" },
   {
     label: "Services",
     to: "/services",
@@ -23,6 +24,7 @@ export const footerNavColumns = [
     title: "Navigation",
     links: [
       { label: "Accueil", to: "/" },
+      { label: "Business Booster 90", to: "/business-booster-90" },
       { label: "Services", to: "/services" },
       { label: "À propos", to: "/a-propos" },
       { label: "Réalisations", to: "/realisations" },

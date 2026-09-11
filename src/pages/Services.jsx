@@ -68,7 +68,7 @@ export default function Services() {
         eyebrow="Un projet en tête ?"
         title="Discutons de l'expertise la plus adaptée à votre activité."
         text="Chaque accompagnement DBC est construit sur mesure. Parlons de vos objectifs pour identifier la meilleure approche."
-        primaryLabel="Parlons de votre projet"
+        primaryLabel="Je réserve mon audit gratuit"
         primaryTo="/contact"
         secondaryLabel="Voir nos réalisations"
         secondaryTo="/realisations"
