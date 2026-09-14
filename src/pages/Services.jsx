@@ -70,8 +70,6 @@ export default function Services() {
         text="Chaque accompagnement DBC est construit sur mesure. Parlons de vos objectifs pour identifier la meilleure approche."
         primaryLabel="Je réserve mon audit gratuit"
         primaryTo="/contact"
-        secondaryLabel="Voir nos réalisations"
-        secondaryTo="/realisations"
       />
     </>
   );

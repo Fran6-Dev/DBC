@@ -16,7 +16,6 @@ export const primaryNav = [
     ],
   },
   { label: "À propos", to: "/a-propos" },
-  { label: "Réalisations", to: "/realisations" },
   { label: "FAQ", to: "/faq" },
   { label: "Contact", to: "/contact" },
 ];
@@ -29,7 +28,6 @@ export const footerNavColumns = [
       { label: "Business Booster 90", to: "/business-booster-90" },
       { label: "Services", to: "/services" },
       { label: "À propos", to: "/a-propos" },
-      { label: "Réalisations", to: "/realisations" },
       { label: "FAQ", to: "/faq" },
       { label: "Contact", to: "/contact" },
     ],

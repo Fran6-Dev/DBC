@@ -6,15 +6,11 @@ import SectionTitle from "../components/ui/SectionTitle";
 import ServiceCard from "../components/sections/ServiceCard";
 import ValueCard from "../components/sections/ValueCard";
 import ProcessTimeline from "../components/sections/ProcessTimeline";
-import ProjectCard from "../components/sections/ProjectCard";
-import TestimonialCard from "../components/sections/TestimonialCard";
 import CTASection from "../components/sections/CTASection";
 import LocalAreaSection from "../components/sections/LocalAreaSection";
 import { services } from "../data/services";
 import { values } from "../data/values";
 import { piliers } from "../data/businessBooster";
-import { projects } from "../data/projects";
-import { testimonials } from "../data/testimonials";
 import { siteConfig } from "../data/siteConfig";
 import { buildLocalBusinessSchema } from "../lib/structuredData";
 import "./Home.css";
@@ -112,41 +108,10 @@ export default function Home() {
 
       <LocalAreaSection />
 
-      {/* RÉALISATIONS */}
-      <section className="section section--bg-alt">
-        <div className="container">
-          <SectionTitle
-            eyebrow="Réalisations"
-            title="Des projets pensés pour faire la différence."
-            lead="Un aperçu de nos accompagnements. Cet espace est amené à évoluer avec de nouveaux projets clients."
-          />
-          <div className="grid grid-3">
-            {projects.slice(0, 3).map((project, index) => (
-              <ProjectCard key={project.id} project={project} delay={Math.min(index + 1, 5)} />
-            ))}
-          </div>
-          <Reveal className="home__realisations-cta">
-            <Button to="/realisations" variant="outline" icon={false}>
-              Voir toutes nos réalisations
-            </Button>
-          </Reveal>
-        </div>
-      </section>
-
-      {/* TÉMOIGNAGES */}
-      <section className="section">
-        <div className="container">
-          <SectionTitle
-            eyebrow="Témoignages"
-            title="La confiance de nos clients, notre meilleure motivation."
-          />
-          <div className="grid grid-3">
-            {testimonials.map((testimonial, index) => (
-              <TestimonialCard key={testimonial.author + index} testimonial={testimonial} delay={Math.min(index + 1, 5)} />
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* RÉALISATIONS et TÉMOIGNAGES : masqués tant qu'il n'y a pas de vrais
+          projets clients / retours à afficher (voir src/data/projects.js et
+          src/data/testimonials.js, marqués `placeholder: true`). Remettre ces
+          sections ici une fois du contenu réel disponible. */}
 
       <CTASection />
     </>

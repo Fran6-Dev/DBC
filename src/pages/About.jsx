@@ -101,8 +101,6 @@ export default function About() {
         text="Le premier échange est gratuit et sans engagement : l'occasion idéale de voir si DBC est le bon partenaire pour vous."
         primaryLabel="Je réserve mon audit gratuit"
         primaryTo="/contact"
-        secondaryLabel="Voir nos réalisations"
-        secondaryTo="/realisations"
       />
     </>
   );
