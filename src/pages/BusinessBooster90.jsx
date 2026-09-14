@@ -94,9 +94,12 @@ export default function BusinessBooster90() {
       <section className="section bb90-founder">
         <div className="container bb90-founder__grid">
           <Reveal>
-            <div className="bb90-founder__photo" role="img" aria-label={`Espace réservé à une photo de ${siteConfig.founder.name}`}>
-              <span>Photo de {siteConfig.founder.name}</span>
-              <span className="text-muted">à venir</span>
+            <div className="bb90-founder__photo">
+              <img
+                src="https://res.cloudinary.com/jqfwkgp1/image/upload/v1789401854/WhatsApp_Image_2026-09-14_at_18.03.02.jpg"
+                alt={`Photo de ${siteConfig.founder.name}`}
+                loading="lazy"
+              />
             </div>
           </Reveal>
           <Reveal delay={1}>

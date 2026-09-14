@@ -113,7 +113,7 @@ export default function Home() {
       <LocalAreaSection />
 
       {/* RÉALISATIONS */}
-      {/* <section className="section section--bg-alt">
+      <section className="section section--bg-alt">
         <div className="container">
           <SectionTitle
             eyebrow="Réalisations"
@@ -131,10 +131,10 @@ export default function Home() {
             </Button>
           </Reveal>
         </div>
-      </section> */}
+      </section>
 
       {/* TÉMOIGNAGES */}
-      {/* <section className="section">
+      <section className="section">
         <div className="container">
           <SectionTitle
             eyebrow="Témoignages"
@@ -146,7 +146,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section> */}
+      </section>
 
       <CTASection />
     </>

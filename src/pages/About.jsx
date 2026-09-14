@@ -39,9 +39,12 @@ export default function About() {
       <section className="section section--bg-alt about-story">
         <div className="container about-story__grid">
           <Reveal>
-            <div className="about-story__photo" role="img" aria-label={`Espace réservé à une photo de ${siteConfig.founder.name}`}>
-              <span>Photo de {siteConfig.founder.name}</span>
-              <span className="text-muted">à venir</span>
+            <div className="about-story__photo">
+              <img
+                src="https://res.cloudinary.com/jqfwkgp1/image/upload/v1789401854/WhatsApp_Image_2026-09-14_at_18.03.02.jpg"
+                alt={`Photo de ${siteConfig.founder.name}`}
+                loading="lazy"
+              />
             </div>
           </Reveal>
           <Reveal delay={1}>
