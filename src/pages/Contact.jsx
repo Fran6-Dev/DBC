@@ -163,10 +163,10 @@ export default function Contact() {
               </li>
             </ul>
 
-            <div className="contact-info__map" role="img" aria-label="Emplacement réservé à une carte Google Maps">
+            {/* <div className="contact-info__map" role="img" aria-label="Emplacement réservé à une carte Google Maps">
               <span>Carte à intégrer</span>
               <span className="text-muted">dès qu'une adresse physique sera communiquée</span>
-            </div>
+            </div> */}
           </Reveal>
 
           <Reveal delay={1} className="contact-form-wrap">
