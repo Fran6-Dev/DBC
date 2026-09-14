@@ -1,4 +1,4 @@
-.dbc-cookie-banner {
+.cookie-banner {
   position: fixed;
   left: 0;
   right: 0;
@@ -11,7 +11,7 @@
   animation: reveal-up var(--dur-slow) var(--ease-premium);
 }
 
-.dbc-cookie-banner__content {
+.cookie-banner__content {
   max-width: var(--container-max);
   margin-inline: auto;
   display: flex;
@@ -21,14 +21,14 @@
   flex-wrap: wrap;
 }
 
-.dbc-cookie-banner__content p {
+.cookie-banner__content p {
   margin: 0;
   max-width: 640px;
   font-size: var(--fs-small);
   color: var(--color-text-muted);
 }
 
-.dbc-cookie-banner__actions {
+.cookie-banner__actions {
   display: flex;
   gap: 0.6rem;
   flex-wrap: wrap;
@@ -183,7 +183,7 @@
 }
 
 @media (max-width: 640px) {
-  .dbc-cookie-banner__content {
+  .cookie-banner__content {
     flex-direction: column;
     align-items: flex-start;
   }
