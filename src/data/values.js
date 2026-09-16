@@ -15,7 +15,7 @@ export const values = [
   },
   {
     title: "Des solutions concrètes",
-    description: "Des actions opérationnelles, adaptées à vos objectifs — pas de théorie.",
+    description: "Des actions opérationnelles, adaptées à vos objectifs pas de théorie.",
   },
 ];
 

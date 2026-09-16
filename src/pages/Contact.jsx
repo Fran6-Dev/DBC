@@ -117,7 +117,7 @@ export default function Contact() {
             <h1>Réservez votre audit gratuit.</h1>
             <p className="text-lead">
               En 30 minutes, on analyse ensemble votre visibilité actuelle et on identifie les
-              leviers prioritaires pour votre activité — sans engagement.
+              leviers prioritaires pour votre activité sans engagement.
             </p>
           </Reveal>
         </div>

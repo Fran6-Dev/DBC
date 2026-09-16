@@ -15,7 +15,7 @@ export default function LeviersSection({ leviers, bgAlt = false }) {
         <SectionTitle
           eyebrow="Les leviers activés"
           title="Ce que ça inclut concrètement"
-          lead="Chaque levier est activé selon un diagnostic initial — une stratégie qui correspond à votre activité, pas une prestation à la carte."
+          lead="Chaque levier est activé selon un diagnostic initial : une stratégie qui correspond à votre activité, pas une prestation à la carte."
         />
         <div className="grid grid-2 leviers-grid">
           {leviers.map((group, index) => (

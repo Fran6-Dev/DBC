@@ -54,7 +54,7 @@ export default function BusinessBooster90() {
           <Reveal delay={3}>
             <p className="hero__lead text-lead">
               DBC accompagne les {siteConfig.audience} dans la mise en place d'une stratégie
-              d'acquisition adaptée à leur activité — avec des résultats visibles en 3 mois,
+              d'acquisition adaptée à leur activité avec des résultats visibles en 3 mois,
               pendant que vous restez concentré sur votre métier.
             </p>
           </Reveal>
@@ -78,7 +78,7 @@ export default function BusinessBooster90() {
           <SectionTitle
             eyebrow="La méthode"
             title="Business Booster 90 : trois piliers, un seul objectif"
-            lead="Un accompagnement structuré sur 90 jours, adapté à votre activité et à vos objectifs — pas une prestation standardisée."
+            lead="Un accompagnement structuré sur 90 jours, adapté à votre activité et à vos objectifs pas une prestation standardisée."
           />
           <ProcessTimeline steps={piliers} />
           <Reveal delay={2} className="bb90-quote">
@@ -156,7 +156,7 @@ export default function BusinessBooster90() {
 
       <CTASection
         title="Prêt à gagner du temps et des clients ?"
-        text="Réservez votre audit gratuit dès aujourd'hui — sans engagement."
+        text="Réservez votre audit gratuit dès aujourd'hui sans engagement."
         primaryLabel="Je réserve mon audit gratuit"
         primaryTo="/contact"
       />

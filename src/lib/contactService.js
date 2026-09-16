@@ -18,7 +18,7 @@ export async function sendContactRequest(payload) {
   const { honeypot: _honeypot, ...fields } = payload;
 
   const subject = payload.source
-    ? "Nouvelle demande d'audit gratuit — Business Booster 90"
+    ? "Nouvelle demande d'audit gratuit : Business Booster 90"
     : "Nouveau message depuis le formulaire de contact du site DBC";
 
   const response = await fetch("https://api.web3forms.com/submit", {

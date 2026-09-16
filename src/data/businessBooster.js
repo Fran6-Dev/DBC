@@ -101,7 +101,7 @@ export const bb90Faq = [
   },
   {
     q: "Est-ce que ça marche pour mon secteur d'activité ?",
-    a: "La méthode s'adapte à votre activité, votre zone de chalandise et votre clientèle — artisan, commerçant, TPE ou PME.",
+    a: "La méthode s'adapte à votre activité, votre zone de chalandise et votre clientèle : artisan, commerçant, TPE ou PME.",
   },
   {
     q: "Combien de temps avant de voir des résultats ?",

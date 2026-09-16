@@ -22,7 +22,7 @@ export default function PolitiqueConfidentialite() {
           <Reveal delay={1} className="legal-hero__content">
             <span className="eyebrow">Vos données</span>
             <h1>Politique de confidentialité</h1>
-            <p className="legal-updated">Dernière mise à jour : à compléter avant mise en ligne.</p>
+            {/* <p className="legal-updated">Dernière mise à jour : à compléter avant mise en ligne.</p> */}
           </Reveal>
         </div>
       </section>
@@ -90,12 +90,12 @@ export default function PolitiqueConfidentialite() {
               personnelles, vous disposez des droits suivants :
             </p>
             <ul>
-              <li><strong>Droit d'accès</strong> — obtenir la confirmation que vos données sont traitées et en obtenir une copie.</li>
-              <li><strong>Droit de rectification</strong> — demander la correction de données inexactes ou incomplètes.</li>
-              <li><strong>Droit à l'effacement</strong> — demander la suppression de vos données dans les conditions prévues par la loi.</li>
-              <li><strong>Droit d'opposition</strong> — vous opposer au traitement de vos données pour des motifs légitimes.</li>
-              <li><strong>Droit à la limitation</strong> — demander la limitation du traitement de vos données.</li>
-              <li><strong>Droit à la portabilité</strong> — recevoir vos données dans un format structuré et couramment utilisé.</li>
+              <li><strong>Droit d'accès</strong> : obtenir la confirmation que vos données sont traitées et en obtenir une copie.</li>
+              <li><strong>Droit de rectification</strong> : demander la correction de données inexactes ou incomplètes.</li>
+              <li><strong>Droit à l'effacement</strong> : demander la suppression de vos données dans les conditions prévues par la loi.</li>
+              <li><strong>Droit d'opposition</strong> : vous opposer au traitement de vos données pour des motifs légitimes.</li>
+              <li><strong>Droit à la limitation</strong> : demander la limitation du traitement de vos données.</li>
+              <li><strong>Droit à la portabilité</strong> : recevoir vos données dans un format structuré et couramment utilisé.</li>
             </ul>
 
             <h2>8. Exercer vos droits</h2>

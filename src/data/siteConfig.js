@@ -14,7 +14,7 @@ export const siteConfig = {
     name: "Djamila Bekkouche",
     role: "Fondatrice de DBC",
     bio: [
-      "Au cours de mon parcours professionnel, j'ai évolué dans des secteurs variés, à des postes à responsabilités. Ces expériences m'ont permis de développer une vision globale de l'entreprise — administrative, organisationnelle, commerciale et relationnelle.",
+      "Au cours de mon parcours professionnel, j'ai évolué dans des secteurs variés, à des postes à responsabilités. Ces expériences m'ont permis de développer une vision globale de l'entreprise : administrative, organisationnelle, commerciale et relationnelle.",
       "En observant le quotidien des dirigeants de TPE, PME, artisans et commerçants, un constat s'est imposé : passionnés par leur métier, ils manquent souvent de temps pour développer leur activité. C'est de ce constat qu'est née DBC.",
       "Parce que chaque entreprise est unique, je privilégie une approche sur-mesure, pragmatique et opérationnelle. Je ne me contente pas de conseiller : je m'implique à vos côtés pour transformer les idées en actions.",
     ],
